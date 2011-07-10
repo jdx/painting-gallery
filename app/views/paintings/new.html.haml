@@ -3,7 +3,7 @@
   = form_for(@painting, :html => {:multipart => true}) do |f|
     - if @painting.errors.any?
       #error_explanation
-        %h2
+        %h3
           = pluralize(@painting.errors.count, "error")
           prohibited this painting from being saved:
         %ul
