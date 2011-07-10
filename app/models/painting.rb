@@ -1,5 +1,5 @@
 class Painting < ActiveRecord::Base
-  validates :title, :presence => true
+  validates :title, :presence => true, :uniqueness => true
   validates :image, :presence => true
   has_attached_file :image,
     :styles => { :thumb => "100x100#" },

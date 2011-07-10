@@ -10,11 +10,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110710051045) do
+ActiveRecord::Schema.define(:version => 20110710061750) do
 
   create_table "paintings", :force => true do |t|
     t.string   "title"
-    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
