@@ -1,4 +1,5 @@
 .paintings
+  %h2 Viewing all paintings
   - @paintings.each do |painting|
     %a{ :href => painting_path(painting) }
       = image_tag painting.image.url(:thumb) if painting.image?
