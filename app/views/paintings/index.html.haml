@@ -1,6 +1,6 @@
 .paintings
   %h2 Viewing all paintings
   - @paintings.each do |painting|
-    %a
-      = image_tag painting.image.url(:thumb) if painting.image?
+    %a.fancybox{ :href => painting.image.url }
+      = image_tag painting.image.url(:thumb)
       %span= painting.title
