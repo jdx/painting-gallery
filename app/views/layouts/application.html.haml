@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title Painting Gallery
+    = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'print.css', :media => 'print'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+  %body.two-col
+    #container
+      #header
+        %h1 Painting Gallery
+        %h2 Rails file upload experiment
+      #sidebar
+        %ul.menu
+          %li= link_to 'View all paintings', paintings_path
+          %li= link_to 'New painting', new_painting_path
+      #content
+        - if alert
+          #alert= alert
+        - if notice
+          #notice= notice
+        = yield
+      #footer
+        Made by #{ link_to "Jeff Dickey", "http://jeffdickey.info/" }
