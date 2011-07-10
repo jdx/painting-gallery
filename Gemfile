@@ -7,11 +7,17 @@ gem 'rails', '3.0.9'
 
 gem 'pg'
 
-gem 'rmagick'
-gem 'carrierwave'
+gem 'paperclip', '~> 2.3'
+gem 'aws-s3'
 
+gem 'compass'
 gem 'haml'
 
+group :development do
+  gem 'rb-fsevent'
+  gem 'growl'
+  gem 'guard-livereload'
+end
 # Use unicorn as the web server
 # gem 'unicorn'
 

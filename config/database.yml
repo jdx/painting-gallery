@@ -11,9 +11,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: painting-gallery_development
+  database: painting_gallery_development
   pool: 5
-  username: painting-gallery
+  username: rails
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -37,9 +37,9 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: painting-gallery_test
+  database: painting_gallery_test
   pool: 5
-  username: painting-gallery
+  username: rails
   password:
 
 production:
