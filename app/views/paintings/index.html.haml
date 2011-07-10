@@ -3,4 +3,4 @@
   - @paintings.each do |painting|
     %a.fancybox{ :href => painting.image.url, :title => painting.title, :rel => 'gallery' }
       = image_tag painting.image.url(:thumb), :alt => painting.title
-      %span= truncate(painting.title, :length => 10)
+      %span= truncate(painting.title, :length => 15)
